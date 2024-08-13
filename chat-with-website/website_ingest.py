@@ -73,7 +73,7 @@ def main():
         print("Creating new ChromaDB")
         init_chromadb()
 
-    print(f"Ingestion complete! You can now run main.py to query your documents")
+    print(f"Ingestion complete! You can now run chat-langgraph.py to query your documents")
 
 
 if __name__ == "__main__":

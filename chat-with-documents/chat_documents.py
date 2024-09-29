@@ -24,8 +24,6 @@ from langchain_core.prompts import ChatPromptTemplate
 import tempfile
 import faiss
 
-# Need access to this model : https://huggingface.co/sentence-transformers/bge-en-icl
-
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_API_KEY"] = "**"
 os.environ["LANGCHAIN_PROJECT"] = "chat-with-documents"

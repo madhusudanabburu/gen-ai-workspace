@@ -1,0 +1,28 @@
+# Comprehensive AI Agent Configuration
+llm:
+  default_type: "claude"
+  claude:
+    model: "claude-3-5-sonnet-20241022"
+    temperature: 0.1
+  llama:
+    model: "local_Meta_Llama_LLM_8B"
+    temperature: 0.1
+
+vector_db:
+  collection_name: "knowledge_base"
+  persist_directory: "./chroma_db"
+  embedding_model: "all-MiniLM-L6-v2"
+
+web_search:
+  max_results: 5
+  max_content_length: 2000
+
+agent:
+  max_iterations: 15  # Generous limit for complex reasoning
+  verbose: true
+  max_chat_history: 20
+
+streamlit:
+  page_title: "Smart AI Agent"
+  page_icon: "🤖"
+  layout: "wide"
